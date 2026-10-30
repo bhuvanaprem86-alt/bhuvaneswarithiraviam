@@ -175,6 +175,15 @@ footer .bar{color:var(--muted);font-size:.9rem}
         <span class="go">Read the case study</span>
       </span>
     </a>
+
+    <a class="art-link" href="#ml-vs-dl" style="margin-top:1.25rem">
+      <span class="art-num">2</span>
+      <span>
+        <h3>Matching the Approach to the Problem: Machine Learning vs. Deep Learning</h3>
+        <p>A comparative paper on when simple ML or deep learning fits, using spam filtering and diabetic retinopathy screening.</p>
+        <span class="go">Read the case study</span>
+      </span>
+    </a>
   </section>
 </div>
 
@@ -315,68 +324,139 @@ footer .bar{color:var(--muted);font-size:.9rem}
     </div>
   </div>
 </div>
+
+<!-- ARTIFACT 2 -->
+<div class="view" id="view-ml-vs-dl" hidden>
+  <div class="art-head">
+    <p class="crumb"><a href="#home">About</a> / Artifact 2</p>
+    <h1>Matching the Approach to the Problem: Machine Learning vs. Deep Learning</h1>
+    <p class="sub">AIML-500 Machine Learning Fundamentals · Comparative paper</p>
+    <a class="try" href="Thiraviam_Bhuvaneswari_WS2_ML_vs_DL_.docx">Read the full paper (Word)</a>
+  </div>
+
+  <div class="layout">
+    <aside class="toc" aria-label="On this page">
+      <ol>
+        <li><a href="#b-intro">Introduction</a></li>
+        <li><a href="#b-desc">Description</a></li>
+        <li><a href="#b-obj">Objective</a></li>
+        <li><a href="#b-proc">Process</a></li>
+        <li><a href="#b-tools">Tools and technologies</a></li>
+        <li><a href="#b-vp">Value proposition</a></li>
+        <li><a href="#b-refs">References</a></li>
+      </ol>
+    </aside>
+
+    <div class="art-body">
+      <section id="b-intro">
+        <h2>Introduction</h2>
+        <p>Choosing between traditional machine learning and deep learning is one of the first decisions in an AI project, and a more powerful model is not always the better one. This artifact compares when each approach fits, using two real-world cases.</p>
+      </section>
+
+      <section id="b-desc">
+        <h2>Description</h2>
+        <p>A short analytical paper comparing Apache SpamAssassin (traditional ML for spam detection) with deep learning for diabetic retinopathy screening from retinal images. For each case, I explain why the chosen approach fits and why the other would not.</p>
+        <div class="matrix">
+          <div class="scroll">
+            <table>
+              <thead><tr><th></th><th>Simple ML</th><th>Deep learning</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Who picks the features</strong></td><td>A person</td><td>The network, from raw data</td></tr>
+                <tr><td><strong>Best data type</strong></td><td>Structured, easy-to-define features</td><td>Complex, unstructured (images)</td></tr>
+                <tr><td><strong>Cost and speed</strong></td><td>Quick and cheap to train and retrain</td><td>More data, computing power, and tuning</td></tr>
+                <tr><td><strong>Explainability</strong></td><td>Easy to trace why a result happened</td><td>Harder to explain</td></tr>
+                <tr><td><strong>Case in my paper</strong></td><td>Spam detection (SpamAssassin)</td><td>Diabetic retinopathy screening</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="b-obj">
+        <h2>Objective</h2>
+        <p>Show that I can evaluate a problem’s data type, need for explainability, and risk level, and then recommend an appropriate AI approach.</p>
+      </section>
+
+      <section id="b-proc">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><strong>Define the difference.</strong> The core difference is who selects the features: a person in ML, the network in deep learning.</li>
+          <li><strong>Choose examples.</strong> I chose one structured-data example (spam filtering) and one unstructured-data example (medical imaging).</li>
+          <li><strong>Research.</strong> I used peer-reviewed and official sources, including <em>Nature</em>, <em>JAMA</em>, and <em>npj Digital Medicine</em>.</li>
+          <li><strong>Compare.</strong> I compared each case on data type, computing cost, explainability, and the consequences of errors.</li>
+          <li><strong>Revise.</strong> I revised the draft for clarity and cited all sources in APA format.</li>
+        </ol>
+      </section>
+
+      <section id="b-tools">
+        <h2>Tools and technologies used</h2>
+        <ul>
+          <li><strong>Claude</strong> (Anthropic): clarifying concepts and proofreading, with all analysis and conclusions my own</li>
+          <li><strong>Scholarly journals and databases</strong>: source research</li>
+          <li><strong>APA citation style</strong>: references</li>
+          <li><strong>Concepts covered:</strong> logistic regression, decision trees, convolutional neural networks, feature engineering</li>
+        </ul>
+      </section>
+
+      <section id="b-vp">
+        <h2>Value proposition</h2>
+        <div class="vp">
+          <div>
+            <h3>Unique value</h3>
+            <p>I explain a technical topic in plain language, with real examples and credible sources, so people new to AI can follow it. I also make the point that the most advanced model is not always the best choice.</p>
+          </div>
+          <div>
+            <h3>Relevance</h3>
+            <p>For classmates, it works as a quick reference on when to use ML versus deep learning. For my professor, it shows I can apply course concepts to real systems (SpamAssassin, IDx-DR) and support my claims with research.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="b-refs">
+        <h2>References</h2>
+        <ul class="refs">
+          <li>Abràmoff, M. D., Lavin, P. T., Birch, M., Shah, N., &amp; Folk, J. C. (2018). Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices. <em>npj Digital Medicine</em>, <em>1</em>, Article 39. <a href="https://doi.org/10.1038/s41746-018-0040-6" target="_blank" rel="noopener">https://doi.org/10.1038/s41746-018-0040-6</a></li>
+          <li>Apache Software Foundation. (n.d.). <em>Apache SpamAssassin</em>. <a href="https://spamassassin.apache.org/" target="_blank" rel="noopener">https://spamassassin.apache.org/</a></li>
+          <li>Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A., Venugopalan, S., Widner, K., Madams, T., Cuadros, J., Kim, R., Raman, R., Nelson, P. C., Mega, J. L., &amp; Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. <em>JAMA</em>, <em>316</em>(22), 2402–2410. <a href="https://doi.org/10.1001/jama.2016.17216" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2016.17216</a></li>
+          <li>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature</em>, <em>521</em>(7553), 436–444. <a href="https://doi.org/10.1038/nature14539" target="_blank" rel="noopener">https://doi.org/10.1038/nature14539</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
 </main>
 
 <footer><div class="bar">© 2026 Bhuvaneswari Thiraviam · Professional portfolio for the AI/ML program at Indiana Wesleyan University</div></footer>
 
 <script>
 (function(){
-  var views = ["home","ai-ml-tutor"];
+  var views = ["home","ai-ml-tutor","ml-vs-dl"];
+  var titles = {"home":"Bhuvaneswari Thiraviam · Professional Portfolio","ai-ml-tutor":"AI/ML Tutor · Bhuvaneswari Thiraviam","ml-vs-dl":"ML vs. Deep Learning · Bhuvaneswari Thiraviam"};
+  function viewOf(id){
+    var el = document.getElementById(id);
+    if (!el) return null;
+    for (var i = 0; i < views.length; i++){
+      if (document.getElementById("view-" + views[i]).contains(el)) return views[i];
+    }
+    return null;
+  }
   function show(){
     var h = (location.hash || "").replace("#","");
     var target = views.indexOf(h) >= 0 ? h : null;
-    var inArtifact = !target && h && document.getElementById(h) && document.getElementById("view-ai-ml-tutor").contains(document.getElementById(h));
-    var inHome = !target && h && document.getElementById(h) && document.getElementById("view-home").contains(document.getElementById(h));
-    var v = target || (inArtifact ? "ai-ml-tutor" : "home");
+    var inside = target ? null : viewOf(h);
+    var v = target || inside || "home";
     views.forEach(function(name){ document.getElementById("view-" + name).hidden = (name !== v); });
-    var cur = (v === "ai-ml-tutor" || h === "artifacts") ? "artifacts" : "home";
+    var cur = (v !== "home" || h === "artifacts") ? "artifacts" : "home";
     document.querySelectorAll("nav a").forEach(function(a){
       if (a.getAttribute("data-view") === cur) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
     });
     if (target) window.scrollTo(0,0);
-    else if (inArtifact || inHome) document.getElementById(h).scrollIntoView();
-    document.title = (v === "home" ? "Bhuvaneswari Thiraviam · Professional Portfolio" : "AI/ML Tutor · Bhuvaneswari Thiraviam");
+    else if (inside) document.getElementById(h).scrollIntoView();
+    document.title = titles[v];
   }
   window.addEventListener("hashchange", show);
   show();
 })();
 </script>
-  <section id="artifact-2">
-  <h2>Artifact 2: Matching the Approach to the Problem: Machine Learning vs. Deep Learning</h2>
-
-  <h3>Introduction</h3>
-  <p>Choosing between traditional machine learning and deep learning is one of the first decisions in an AI project, and a more powerful model is not always the better one. This artifact compares when each approach fits, using two real-world cases.</p>
-
-  <h3>Description</h3>
-  <p>A short analytical paper comparing Apache SpamAssassin (traditional ML for spam detection) with deep learning for diabetic retinopathy screening from retinal images. For each case, I explain why the chosen approach fits and why the other would not.</p>
-
-  <h3>Objective</h3>
-  <p>Show that I can evaluate a problem's data type, need for explainability, and risk level, and then recommend an appropriate AI approach.</p>
-
-  <h3>Process</h3>
-  <ol>
-    <li>Defined the core difference: who selects the features (a person in ML, the network in deep learning).</li>
-    <li>Chose one structured-data example (spam filtering) and one unstructured-data example (medical imaging).</li>
-    <li>Researched peer-reviewed and official sources, including <em>Nature</em>, <em>JAMA</em>, and <em>npj Digital Medicine</em>.</li>
-    <li>Compared each case on data type, computing cost, explainability, and the consequences of errors.</li>
-    <li>Revised the draft for clarity and cited all sources in APA format.</li>
-  </ol>
-
-  <h3>Tools and Technologies Used</h3>
-  <p>Claude (to clarify concepts and proofread, with all analysis and conclusions my own), scholarly journals and databases, APA citation style. Concepts covered: logistic regression, decision trees, convolutional neural networks, feature engineering.</p>
-
-  <h3>Value Proposition</h3>
-  <p><strong>Unique Value:</strong> I explain a technical topic in plain language, with real examples and credible sources, so people new to AI can follow it. I also make the point that the most advanced model is not always the best choice.</p>
-  <p><strong>Relevance:</strong> For classmates, it works as a quick reference on when to use ML versus deep learning. For my professor, it shows I can apply course concepts to real systems (SpamAssassin, IDx-DR) and support my claims with research.</p>
-
-  <h3>Evidence</h3>
-  <p><a href="Thiraviam_Bhuvaneswari_WS2_ML_vs_DL_fixed.docx">Read the full paper (Word document)</a></p>
-
-  <h3>References</h3>
-  <p>Abràmoff, M. D., Lavin, P. T., Birch, M., Shah, N., &amp; Folk, J. C. (2018). Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices. <em>npj Digital Medicine</em>, <em>1</em>, Article 39. <a href="https://doi.org/10.1038/s41746-018-0040-6">https://doi.org/10.1038/s41746-018-0040-6</a></p>
-  <p>Apache Software Foundation. (n.d.). <em>Apache SpamAssassin</em>. <a href="https://spamassassin.apache.org/">https://spamassassin.apache.org/</a></p>
-  <p>Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A., Venugopalan, S., Widner, K., Madams, T., Cuadros, J., Kim, R., Raman, R., Nelson, P. C., Mega, J. L., &amp; Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. <em>JAMA</em>, <em>316</em>(22), 2402–2410. <a href="https://doi.org/10.1001/jama.2016.17216">https://doi.org/10.1001/jama.2016.17216</a></p>
-  <p>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature</em>, <em>521</em>(7553), 436–444. <a href="https://doi.org/10.1038/nature14539">https://doi.org/10.1038/nature14539</a></p>
-</section>
 </body>
 </html>
